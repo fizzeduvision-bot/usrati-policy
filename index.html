@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>USRATI — Family Daily Journey</title>
+  <meta name="description" content="USRATI helps families organise daily routines, prayer-aware journeys, family responsibilities, guidance and growth.">
+  <style>
+:root{
+  --bg:#f7f6f1;
+  --card:#ffffff;
+  --text:#22302a;
+  --muted:#68766f;
+  --sage:#728b78;
+  --sage-dark:#4e6656;
+  --sand:#d8c3a5;
+  --line:#e7e4dc;
+  --accent:#a7654c;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
+a{color:var(--sage-dark);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{width:min(940px,calc(100% - 32px));margin:0 auto}
+.topbar{
+  position:sticky;top:0;z-index:20;
+  background:rgba(247,246,241,.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--text)}
+.logo{
+  width:36px;height:36px;border-radius:12px;
+  display:grid;place-items:center;
+  background:var(--sage-dark);color:white;font-weight:900
+}
+.navlinks{display:flex;gap:18px;font-size:.95rem}
+.hero{padding:82px 0 52px}
+.eyebrow{
+  display:inline-block;padding:7px 11px;border-radius:999px;
+  background:#e9eee9;color:var(--sage-dark);font-size:.85rem;font-weight:700
+}
+h1{font-size:clamp(2.25rem,6vw,4.5rem);line-height:1.06;letter-spacing:-.04em;margin:18px 0}
+.hero p{max-width:720px;font-size:1.12rem;color:var(--muted)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:12px 18px;border-radius:12px;font-weight:700;
+  border:1px solid var(--line)
+}
+.btn.primary{background:var(--sage-dark);color:#fff;border-color:var(--sage-dark)}
+.btn.secondary{background:#fff;color:var(--text)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:28px 0 70px}
+.card{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:20px;padding:26px;
+  box-shadow:0 8px 28px rgba(29,45,37,.05)
+}
+.card h2{margin:0 0 8px;font-size:1.3rem}
+.card p{color:var(--muted);margin:0 0 18px}
+.pagehead{padding:58px 0 24px}
+.pagehead h1{font-size:clamp(2.1rem,5vw,3.6rem)}
+.meta{color:var(--muted);font-size:.94rem}
+.content{
+  background:#fff;border:1px solid var(--line);
+  border-radius:22px;padding:clamp(22px,5vw,46px);
+  margin-bottom:64px;box-shadow:0 8px 28px rgba(29,45,37,.05)
+}
+.content h2{margin-top:34px;line-height:1.25;font-size:1.34rem}
+.content h2:first-of-type{margin-top:20px}
+.content p,.content li{color:#44534c}
+.content ul{padding-left:22px}
+.notice{
+  background:#eef2ed;border-left:4px solid var(--sage);
+  padding:15px 17px;border-radius:10px;margin:20px 0
+}
+.contact{
+  background:#f5f3ed;border:1px solid var(--line);
+  padding:18px;border-radius:12px
+}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+.footerrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:640px){
+  .navlinks{gap:10px;font-size:.85rem}
+  .grid{grid-template-columns:1fr}
+  .hero{padding-top:56px}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="./"><span class="logo">U</span><span>USRATI</span></a>
+    <nav class="navlinks" aria-label="Legal">
+      <a href="./policy/">Privacy</a>
+      <a href="./term/">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Family • Faith • Daily Growth</span>
+      <h1>A calmer way to guide your family's day.</h1>
+      <p>
+        USRATI is a family-focused mobile application designed to help organise personal daily journeys,
+        family responsibilities, routines, prayer-aware activities, guidance resources and long-term growth
+        in one simple experience.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="./policy/">Read Privacy Policy</a>
+        <a class="btn secondary" href="./term/">Read Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap grid" aria-label="USRATI legal information">
+    <article class="card">
+      <h2>Privacy Policy</h2>
+      <p>Learn how USRATI handles local app data, optional location access, permissions, media and privacy choices.</p>
+      <a href="./policy/"><strong>Open Privacy Policy →</strong></a>
+    </article>
+    <article class="card">
+      <h2>Terms &amp; Conditions</h2>
+      <p>Understand the rules, responsibilities, limitations and conditions that apply when using USRATI.</p>
+      <a href="./term/"><strong>Open Terms →</strong></a>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footerrow">
+    <span>© 2026 USRATI. All rights reserved.</span>
+    <span><a href="./policy/">Privacy</a> · <a href="./term/">Terms</a></span>
+  </div>
+</footer>
+</body>
+</html>
